@@ -1,0 +1,85 @@
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0A0F1E 0%, #131929 50%, #1B2339 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-bg-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(37,99,235,0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(37,99,235,0.07) 1px, transparent 1px);
+  background-size: 60px 60px;
+  pointer-events: none;
+}
+
+.login-card {
+  background: var(--surface);
+  border-radius: var(--r-xl);
+  padding: 40px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: var(--shadow-xl), 0 0 80px rgba(37,99,235,0.15);
+  border: 1px solid var(--border);
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Header / logo ── */
+.login-header {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.login-logo-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  /* subtle white pill so logo reads on dark card */
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px 24px;
+  display: inline-flex;
+}
+
+.login-logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
+}
+
+.login-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  margin: 0 0 4px;
+}
+
+.login-sub {
+  font-size: 0.875rem;
+  color: var(--text-3);
+  margin: 0;
+}
+
+/* ── Form ── */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-forgot {
+  font-size: 0.78rem;
+  color: var(--primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+.login-forgot:hover { text-decoration: underline; }
